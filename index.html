@@ -5,40 +5,79 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mock Website</title>
     <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
 </head>
 <body>
     <div class="container">
         <div class="top-banner">
-            <img src="path_to_paipix1_image" alt="PaiPix-1 NEW AI">
-            <button class="read-button">Read</button>
+            <img src="path_to_paipix1_image.png" alt="PaiPix-1 NEW AI" onclick="showPost('post1')">
+            <button class="read-button" onclick="showPost('post1')">Read</button>
         </div>
         <div class="category">
             <h2>PaiPix</h2>
             <div class="item">
-                <img src="path_to_paipix2_image" alt="PaiPix-2 UPDATE">
+                <img src="path_to_paipix2_image.png" alt="PaiPix-2 UPDATE" onclick="showPost('post2')">
             </div>
             <div class="item">
-                <img src="path_to_paipix3_image" alt="PaiPix-3 UPDATE">
+                <img src="path_to_paipix3_image.png" alt="PaiPix-3 UPDATE" onclick="showPost('post3')">
             </div>
         </div>
         <div class="category">
             <h2>FulyDat</h2>
             <div class="item">
-                <img src="path_to_fulydat1_image" alt="FulyDat Collaboration?">
+                <img src="path_to_fulydat1_image.png" alt="FulyDat Collaboration?" onclick="showPost('post4')">
             </div>
             <div class="item">
-                <img src="path_to_fulydat2_image" alt="FulyDat Collaboration">
+                <img src="path_to_fulydat2_image.png" alt="FulyDat Collaboration" onclick="showPost('post5')">
             </div>
         </div>
         <div class="try-paipix">
             <h2>Try PaiPix!</h2>
             <p>Find the best avatar for yourself</p>
-            <button class="try-button">Try it</button>
+            <button class="try-button" onclick="showPost('post6')">Try it</button>
         </div>
         <footer class="footer">
             <h2>Company</h2>
-            <img src="path_to_company_logo" alt="Company Logo">
+            <img src="path_to_company_logo.png" alt="Company Logo">
         </footer>
+    </div>
+
+    <!-- Hidden posts -->
+    <div id="post1" class="post">
+        <h2>PaiPix-1 NEW AI</h2>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/example_video_id" frameborder="0" allowfullscreen></iframe>
+        <p>This is the content of the PaiPix-1 post...</p>
+        <button class="close-button" onclick="hidePost('post1')">Close</button>
+    </div>
+    <div id="post2" class="post">
+        <h2>PaiPix-2 UPDATE</h2>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/example_video_id" frameborder="0" allowfullscreen></iframe>
+        <p>This is the content of the PaiPix-2 post...</p>
+        <button class="close-button" onclick="hidePost('post2')">Close</button>
+    </div>
+    <div id="post3" class="post">
+        <h2>PaiPix-3 UPDATE</h2>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/example_video_id" frameborder="0" allowfullscreen></iframe>
+        <p>This is the content of the PaiPix-3 post...</p>
+        <button class="close-button" onclick="hidePost('post3')">Close</button>
+    </div>
+    <div id="post4" class="post">
+        <h2>FulyDat Collaboration?</h2>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/example_video_id" frameborder="0" allowfullscreen></iframe>
+        <p>This is the content of the FulyDat Collaboration? post...</p>
+        <button class="close-button" onclick="hidePost('post4')">Close</button>
+    </div>
+    <div id="post5" class="post">
+        <h2>FulyDat Collaboration</h2>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/example_video_id" frameborder="0" allowfullscreen></iframe>
+        <p>This is the content of the FulyDat Collaboration post...</p>
+        <button class="close-button" onclick="hidePost('post5')">Close</button>
+    </div>
+    <div id="post6" class="post">
+        <h2>Try PaiPix!</h2>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/example_video_id" frameborder="0" allowfullscreen></iframe>
+        <p>Find the best avatar for yourself...</p>
+        <button class="close-button" onclick="hidePost('post6')">Close</button>
     </div>
 </body>
 </html>
